@@ -45,7 +45,6 @@ This project demonstrates the power of <strong>RTK Query</strong> in handling AP
   <img src="https://img.shields.io/badge/Redux-%23764ABC?style=for-the-badge&logo=redux&logoColor=white" />
   <img src="https://img.shields.io/badge/RTK%20Query-%23008CFF?style=for-the-badge&logo=redux&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-%236646FF?style=for-the-badge&logo=vite&logoColor=FFD62E" />
-  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   <img src="https://img.shields.io/badge/Framer_Motion-%23F5A623?style=for-the-badge&logo=framer&logoColor=white" />
 </p>
 
