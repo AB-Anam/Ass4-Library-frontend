@@ -178,3 +178,45 @@ npm run dev
 
 # Build production version
 npm run build
+
+Deployment
+
+Frontend deployed via Vercel: https://ass4-library-frontend.vercel.app/
+
+Backend can be deployed via Heroku / Render / Vercel Serverless Functions
+
+Ensure environment variables are correctly set for production.
+
+UI/UX Highlights ✨
+
+Minimalist & Clean Design: Focus on functionality and readability
+
+Responsive Layout: Works seamlessly across mobile, tablet, desktop
+
+Hover & Card Animations: Framer Motion for interactive feel
+
+Toasts: React Hot Toast with custom styling
+
+Shimmer & Gradient Effects: Subtle visual enhancements on cards
+
+Contribution
+
+Contributions are welcome!
+
+Fork the repository
+
+Create a new branch for features/fixes
+
+Submit a Pull Request
+
+Follow existing coding style, component structure, and state management patterns.
+
+Acknowledgements
+
+React
+
+Redux Toolkit
+
+RTK Query
+
+TailwindCSS
