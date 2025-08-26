@@ -1,69 +1,112 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://your-gif-url.com/library-typing.gif" alt="Library Catalog Typing Animation" width="600"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Header -->
+<h1 style="color:#0EA5E9; font-size: 50px; text-align:center;">📚 John's Library Catalog</h1>
+<p style="text-align:center; font-size:18px; color:#475569;">A modern Library Management Frontend built with React, Redux, RTK Query, Vite & TailwindCSS.</p>
 
-Currently, two official plugins are available:
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/React-%2361DAFB?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redux-%23764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+  <img src="https://img.shields.io/badge/RTK%20Query-%23008CFF?style=for-the-badge&logo=redux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-%236646FF?style=for-the-badge&logo=vite&logoColor=FFD62E" />
+  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+<h2 style="color:#0EA5E9;">✨ Features</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<ul style="font-size:16px; color:#334155;">
+  <li>✅ Browse all available books</li>
+  <li>✅ Add new books with details (title, author, ISBN, description, genre)</li>
+  <li>✅ Edit and update existing books</li>
+  <li>✅ Borrow books and track borrowed copies</li>
+  <li>✅ See a summary of borrowed books</li>
+  <li>✅ Toast notifications for user actions</li>
+  <li>✅ Responsive & modern UI (TailwindCSS + Framer Motion)</li>
+</ul>
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+<h2 style="color:#0EA5E9;">⚙️ Tech Stack</h2>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p style="font-size:16px; color:#334155;">
+<strong>Frontend:</strong> React + Redux Toolkit + RTK Query + TailwindCSS + Framer Motion <br/>
+<strong>Bundler:</strong> Vite <br/>
+<strong>Notifications:</strong> React Hot Toast <br/>
+<strong>Deployment:</strong> Vercel
+</p>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<h2 style="color:#0EA5E9;">💡 How RTK Query Works</h2>
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p style="font-size:16px; color:#334155;">
+RTK Query manages all **API interactions** in this project. It handles **data fetching, caching, invalidation, and loading states** automatically.
+</p>
+
+<h3 style="color:#0EA5E9;">Mutations (Write Operations)</h3>
+
+<table>
+  <tr>
+    <th>Mutation</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td><code>useAddBookMutation</code></td>
+    <td>Add a new book to the library database</td>
+  </tr>
+  <tr>
+    <td><code>useUpdateBookMutation</code></td>
+    <td>Edit/update book details (title, author, copies, etc.)</td>
+  </tr>
+  <tr>
+    <td><code>useDeleteBookMutation</code></td>
+    <td>Delete a book from the library</td>
+  </tr>
+  <tr>
+    <td><code>useBorrowBookMutation</code></td>
+    <td>Borrow a book and update availability in the database</td>
+  </tr>
+</table>
+
+---
+
+<h2 style="color:#0EA5E9;">📂 Project Setup & Installation</h2>
+
+<pre style="background:#f1f5f9; padding:10px; border-radius:8px;">
+# Clone the repo
+git clone https://github.com/AB-Anam/Ass4-Library-frontend.git
+cd Ass4-Library-frontend
+
+# Install dependencies
+npm install
+
+# Setup environment variables
+# Create a .env file in the root:
+VITE_BACKEND_URL=https://ass3-library-management.vercel.app/api
+
+# Run locally
+npm run dev
+
+# Build for production
+npm run build
+</pre>
+
+---
+
+<h2 style="color:#0EA5E9;">🚀 Live Demo</h2>
+
+<p style="font-size:16px; color:#334155;">Check the live application here: <a href="https://ass4-library-frontend.vercel.app/" target="_blank">https://ass4-library-frontend.vercel.app/</a></p>
+
+---
+
+<h2 style="color:#0EA5E9;">👨‍💻 Author</h2>
+
+<p style="font-size:16px; color:#334155;">
+<strong>AB-Anam</strong> <br/>
+GitHub: <a href="https://github.com/AB-Anam" target="_blank">AB-Anam</a> <br/>
+</p>
