@@ -51,7 +51,7 @@ interface BackendBorrowSummary {
 
 export const apiSlice = createApi({
   reducerPath: 'api',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
+ baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL }),
   tagTypes: ['Book', 'Borrow'],
   endpoints: (builder) => ({
 

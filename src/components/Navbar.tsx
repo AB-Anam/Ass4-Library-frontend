@@ -1,7 +1,8 @@
 // src/components/Navbar.tsx
 import { motion } from 'framer-motion';
 import { NavLink, Link } from 'react-router-dom';
-import { Book, PlusCircle, ClipboardList } from 'lucide-react';
+import {
+   Book, PlusCircle, ClipboardList } from 'lucide-react';
 
 const Navbar = () => {
   const navLinkClasses = "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200";
